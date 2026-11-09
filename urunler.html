@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz | Dormen Plastik</title>
+
+    <!-- JPEG Formatında Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Kendi CSS Dosyamız -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light"> <!-- Sayfa arka planını görseldeki gibi açık gri yaptık -->
+
+    <!-- ================= NAVBAR BAŞLANGICI ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/Logo-Saydam.png" alt="Dormen Plastik Logo" class="navbar-logo me-2">
+
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ANA SAYFA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">HAKKIMIZDA</a></li>
+
+                    <!-- ÜRÜNLER AÇILIR MENÜSÜ (Hover ile açılacak) -->
+                    <li class="nav-item dropdown custom-dropdown-container">
+                        <a class="nav-link dropdown-toggle" href="urunler.html" id="urunlerDropdown" role="button"
+                            aria-expanded="false">
+                            ÜRÜNLER
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown" aria-labelledby="urunlerDropdown">
+                            <li><a class="dropdown-item" href="siyah-granul.html">Siyah Granül</a></li>
+                            <li><a class="dropdown-item" href="mavi-granul.html">Mavi Granül</a></li>
+                            <li><a class="dropdown-item" href="kirmizi-granul.html">Kırmızı Granül</a></li>
+                            <li><a class="dropdown-item" href="balkopugu-granul.html">Balköpüğü Granül</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="uretim.html">ÜRETİM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= NAVBAR BİTİŞİ ================= -->
+
+
+    <!-- ================= ÜRÜNLER İÇERİK ALANI ================= -->
+    <section class="container" style="margin-top: 120px; margin-bottom: 60px;">
+        <div class="row">
+
+            <!-- SOL MENÜ (Sidebar) -->
+            <div class="col-lg-3 mb-4">
+                <div class="bg-white border rounded-0 p-3 shadow-sm sidebar-menu">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="siyah-granul.html"
+                                class="d-flex justify-content-between align-items-center fw-bold text-dark text-decoration-none py-3 border-bottom sidebar-link">
+                                SİYAH GRANÜL <i class="fas fa-chevron-right text-muted small"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mavi-granul.html"
+                                class="d-flex justify-content-between align-items-center fw-bold text-dark text-decoration-none py-3 border-bottom sidebar-link">
+                                MAVİ GRANÜL <i class="fas fa-chevron-right text-muted small"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kirmizi-granul.html"
+                                class="d-flex justify-content-between align-items-center fw-bold text-dark text-decoration-none py-3 border-bottom sidebar-link">
+                                KIRMIZI GRANÜL <i class="fas fa-chevron-right text-muted small"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="balkopugu-granul.html"
+                                class="d-flex justify-content-between align-items-center fw-bold text-dark text-decoration-none py-3 sidebar-link">
+                                BALKÖPÜĞÜ GRANÜL <i class="fas fa-chevron-right text-muted small"></i>
+                            </a>
+                        </li>
+                        <a href="#kullanim-alanlari"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center mt-3"
+                            style="background-color: white; color: black; font-weight: bold; border-radius: 8px;">
+                            KULLANIM ALANLARI
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SAĞ İÇERİK (Ürün Kartları) -->
+            <div class="col-lg-9">
+                <div class="bg-white border rounded-0 p-4 p-md-5 shadow-sm">
+                    <h2 class="fw-bolder mb-5 text-uppercase" style="font-size: 1.8rem;">DORMEN PLASTİK ÜRÜNLER</h2>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                        <!-- Ürün 1: Siyah Granül -->
+                        <div class="col">
+                            <a href="siyah-granul.html"
+                                class="product-showcase-card text-center border p-4 h-100 d-flex flex-column justify-content-between text-decoration-none d-block">
+                                <div>
+                                    <img src="assets/img/siyah-granul.jpg" alt="Siyah Granül"
+                                        class="product-circle-img mb-4">
+                                    <h5 class="fw-bold text-dark mb-3">SİYAH GRANÜL</h5>
+                                    <p class="text-muted small mb-0">Yüksek darbe dayanımı, mükemmel akışkanlık ve
+                                        homojen yapı.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Ürün 2: Mavi Granül -->
+                        <div class="col">
+                            <a href="mavi-granul.html"
+                                class="product-showcase-card text-center border p-4 h-100 d-flex flex-column justify-content-between text-decoration-none d-block">
+                                <div>
+                                    <img src="assets/img/mavi-granul.jpg" alt="Mavi Granül"
+                                        class="product-circle-img mb-4">
+                                    <h5 class="fw-bold text-dark mb-3">MAVİ GRANÜL</h5>
+                                    <p class="text-muted small mb-0">Canlı renk, yüksek UV dayanımı ve uzun ömürlü
+                                        kullanım.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Ürün 3: Kırmızı Granül -->
+                        <div class="col">
+                            <a href="kirmizi-granul.html"
+                                class="product-showcase-card text-center border p-4 h-100 d-flex flex-column justify-content-between text-decoration-none d-block">
+                                <div>
+                                    <img src="assets/img/kirmizi-granul.jpg" alt="Kırmızı Granül"
+                                        class="product-circle-img mb-4">
+                                    <h5 class="fw-bold text-dark mb-3">KIRMIZI GRANÜL</h5>
+                                    <p class="text-muted small mb-0">Parlak ve canlı renk tonları ile estetik görünüm
+                                        sağlar.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Ürün 4: Balköpüğü Granül -->
+                        <div class="col">
+                            <a href="balkopugu-granul.html"
+                                class="product-showcase-card text-center border p-4 h-100 d-flex flex-column justify-content-between text-decoration-none d-block">
+                                <div>
+                                    <img src="assets/img/balkopugu-granul.jpg" alt="Balköpüğü Granül"
+                                        class="product-circle-img mb-4">
+                                    <h5 class="fw-bold text-dark mb-3">BALKÖPÜĞÜ GRANÜL</h5>
+                                    <p class="text-muted small mb-0">Doğal ve estetik görünüm, homojen karışım kalitesi.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= NERELERDE KULLANILIR? (KULLANIM ALANLARI) ================= -->
+    <section id="kullanim-alanlari" class="py-5 bg-light">
+        <div class="container py-5">
+
+            <!-- Başlık Alanı -->
+            <div class="text-center mb-5">
+                <span class="badge bg-primary mb-2 py-2 px-3 rounded-pill text-uppercase tracking-wide">Kullanım
+                    Alanları</span>
+                <h2 class="fw-bolder text-dark display-5 mb-3">Granülümüz, Üretiminizin Hammaddesi.</h2>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Geri dönüştürülmüş LDPE hammaddemiz, kalitesi ve uygun reçeteleriyle birçok farklı endüstriyel
+                    üretim hattında güvenle kullanılmaktadır.
+                </p>
+            </div>
+
+            <!-- Sektör Kartları (5 Adet) -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- 1. Kangal Boru -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm usage-card">
+                        <div class="overflow-hidden rounded-top">
+                            <!-- DİKKAT: Kangal boru fotoğrafını 'kullanim-boru.jpg' olarak ekleyin -->
+                            <img src="assets/img/kangal-boru.jpeg" class="card-img-top usage-img" alt="Kangal Boru">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold text-dark mb-2">Kangal Boru</h4>
+                            <p class="card-text text-muted mb-0">LDPE bazlı üretim uygulamaları</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Plastik Saksı -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm usage-card">
+                        <div class="overflow-hidden rounded-top">
+                            <!-- DİKKAT: Plastik saksı fotoğrafını 'kullanim-saksi.jpg' olarak ekleyin -->
+                            <img src="assets/img/plastik-saksi.jpeg" class="card-img-top usage-img" alt="Plastik Saksı">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold text-dark mb-2">Plastik Saksı</h4>
+                            <p class="card-text text-muted mb-0">Geri dönüştürülmüş hammaddenin değerlendirilebildiği
+                                üretimler</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Plastik Levha -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm usage-card">
+                        <div class="overflow-hidden rounded-top">
+                            <!-- DİKKAT: Plastik levha fotoğrafını 'kullanim-levha.jpg' olarak ekleyin -->
+                            <img src="assets/img/kullanim-levha.png
+                            " class="card-img-top usage-img" alt="Plastik Levha">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold text-dark mb-2">Plastik Levha</h4>
+                            <p class="card-text text-muted mb-0">Endüstriyel plastik levha uygulamaları</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Poşet & Film -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm usage-card">
+                        <div class="overflow-hidden rounded-top">
+                            <!-- DİKKAT: Poşet/Film fotoğrafını 'kullanim-film.jpg' olarak ekleyin -->
+                            <img src="assets/img/kullanim-film.png" class="card-img-top usage-img" alt="Poşet ve Film">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold text-dark mb-2">Poşet & Film</h4>
+                            <p class="card-text text-muted mb-0">Uygun kalite ve reçetelerde film uygulamaları</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Enjeksiyon Ürünleri -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm usage-card">
+                        <div class="overflow-hidden rounded-top">
+                            <!-- DİKKAT: Enjeksiyon fotoğrafını 'kullanim-enjeksiyon.jpg' olarak ekleyin -->
+                            <img src="assets/img/kullanim-enjeksiyon.jpg" class="card-img-top usage-img"
+                                alt="Enjeksiyon Ürünleri">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold text-dark mb-2">Enjeksiyon Ürünleri</h4>
+                            <p class="card-text text-muted mb-0">Ürün ve reçeteye bağlı çeşitli plastik uygulamalar</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER BAŞLANGICI ================= -->
+    <footer class="footer-section text-white py-5">
+        <div class="container pt-4">
+            <div class="row">
+                <!-- Sol Kolon: Kurumsal -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold tracking-wide mb-3">DORMEN <span class="text-primary">PLASTİK</span></h4>
+                    <p class="text-primary fw-bold mb-3">Kalite • Güven • Süreklilik</p>
+                    <p class="small text-white-50 pe-md-4">
+                        Plastik atıkları yeniden ekonomiye kazandırıyor, sanayinin ihtiyaç duyduğu geri dönüştürülmüş
+                        LDPE hammaddesini üretiyoruz.
+                    </p>
+                </div>
+
+                <!-- Orta Kolon: Hızlı Menü -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4 text-white">Hızlı Menü</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none footer-link">Ana
+                                Sayfa</a></li>
+                        <li class="mb-2"><a href="hakkimizda.html"
+                                class="text-white-50 text-decoration-none footer-link">Hakkımızda</a></li>
+                        <li class="mb-2"><a href="uretim.html"
+                                class="text-white-50 text-decoration-none footer-link">Üretim</a></li>
+                        <li class="mb-2"><a href="iletisim.html"
+                                class="text-white-50 text-decoration-none footer-link">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sağ Kolon: Ürünler -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4">
+                        <a href="urunler.html" class="text-white text-decoration-none footer-link">Ürünler</a>
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="siyah-granul.html"
+                                class="text-white-50 text-decoration-none footer-link">Siyah Granül</a></li>
+                        <li class="mb-2"><a href="mavi-granul.html"
+                                class="text-white-50 text-decoration-none footer-link">Mavi Granül</a></li>
+                        <li class="mb-2"><a href="kirmizi-granul.html"
+                                class="text-white-50 text-decoration-none footer-link">Kırmızı Granül</a></li>
+                        <li class="mb-2"><a href="balkopugu-granul.html"
+                                class="text-white-50 text-decoration-none footer-link">Balköpüğü Granül</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="small text-white-50 mb-0">&copy; 2014 Dormen Plastik Tüm hakları
+                    saklıdır. Designed by <a href="https://www.dormenplastik.com" target="_blank"
+                        class="text-white-50 text-decoration-none">Dormen Plastik</a></p>
+                <div class="mt-3 mt-md-0">
+                    <a href="https://instagram.com/dormenplast" target="_blank"
+                        class="text-white-50 fs-4 hover-primary transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= FOOTER BİTİŞİ ================= -->
+
+    <!-- ================= SAĞ ALT WHATSAPP BUTONU ================= -->
+    <a href="https://wa.me/905348197565" class="whatsapp-btn" target="_blank" title="WhatsApp'tan Teklif Alın">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SOL ALT EN BAŞA DÖN BUTONU -->
+    <button id="scrollToTopBtn" class="scroll-top-btn" title="En Başa Dön">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Kendi JS Dosyamız -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

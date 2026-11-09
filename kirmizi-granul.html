@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kırmızı Granül | Dormen Plastik</title>
+
+    <!-- JPEG Formatında Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Kendi CSS Dosyamız -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- ================= NAVBAR BAŞLANGICI ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/Logo-Saydam.png" alt="Dormen Plastik Logo" class="navbar-logo me-2">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ANA SAYFA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">HAKKIMIZDA</a></li>
+
+                    <!-- ÜRÜNLER AÇILIR MENÜSÜ -->
+                    <li class="nav-item dropdown custom-dropdown-container">
+                        <a class="nav-link dropdown-toggle active" href="urunler.html" id="urunlerDropdown" role="button" aria-expanded="false">ÜRÜNLER</a>
+                        <ul class="dropdown-menu custom-dropdown" aria-labelledby="urunlerDropdown">
+                            <li><a class="dropdown-item" href="siyah-granul.html">Siyah Granül</a></li>
+                            <li><a class="dropdown-item" href="mavi-granul.html">Mavi Granül</a></li>
+                            <!-- DİKKAT: Kırmızı Granül sayfasında olduğumuz için 'active' sınıfı buraya geçti -->
+                            <li><a class="dropdown-item active" href="kirmizi-granul.html">Kırmızı Granül</a></li>
+                            <li><a class="dropdown-item" href="balkopugu-granul.html">Balköpüğü Granül</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="uretim.html">ÜRETİM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= NAVBAR BİTİŞİ ================= -->
+
+    <!-- ================= ÜRÜN DETAY ALANI ================= -->
+    <section class="py-5" style="margin-top: 100px;">
+        <div class="container py-4">
+            
+            <!-- Sayfa Başlığı -->
+            <div class="mb-5 border-bottom pb-3">
+                <h1 class="fw-bolder text-dark text-uppercase display-6 mb-2">Kırmızı Granül (LDPE)</h1>
+                <p class="text-muted fs-5">Geri Dönüştürülmüş Alçak Yoğunluklu Polietilen</p>
+            </div>
+
+            <div class="row g-5">
+                
+                <!-- SOL KOLON: Fotoğraflar -->
+                <div class="col-lg-6">
+                    <!-- Ana Büyük Fotoğraf -->
+                    <div class="product-main-wrapper mb-4 overflow-hidden">
+                        <img src="assets/img/kirmizi-granul-buyuk.jpeg" alt="Kırmızı Granül" class="w-100 img-fluid product-main-img">
+                    </div>
+
+                    <!-- Alt Kısım: Diğer Renkler (Küçük Görseller) -->
+                    <h6 class="fw-bold text-muted mb-3">DİĞER RENK SEÇENEKLERİ</h6>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="siyah-granul.html" class="thumbnail-link" title="Siyah Granül İncele">
+                            <img src="assets/img/siyah-granul.jpg" alt="Siyah Granül" class="rounded-3 border product-thumbnail shadow-sm">
+                        </a>
+                        <a href="mavi-granul.html" class="thumbnail-link" title="Mavi Granül İncele">
+                            <img src="assets/img/mavi-granul.jpg" alt="Mavi Granül" class="rounded-3 border product-thumbnail shadow-sm">
+                        </a>
+                        <a href="balkopugu-granul.html" class="thumbnail-link" title="Balköpüğü Granül İncele">
+                            <img src="assets/img/balkopugu-granul.jpg" alt="Balköpüğü Granül" class="rounded-3 border product-thumbnail shadow-sm">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SAĞ KOLON: Özellikler ve Kullanım Alanları -->
+                <div class="col-lg-6">
+                    
+                    <!-- Özellikler Bölümü -->
+                    <h4 class="fw-bold text-dark mb-4 border-start border-4 border-success ps-3">Özellikler</h4>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-circle text-success mt-1 me-3" style="font-size: 8px;"></i>
+                            <span class="text-muted"><strong class="text-dark">Parlak ve canlı renk tonları ile estetik görünüm</strong> sağlar.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-circle text-success mt-1 me-3" style="font-size: 8px;"></i>
+                            <span class="text-muted">LDPE (Alçak Yoğunluklu Polietilen) bazlı 1. sınıf geri dönüştürülmüş ham maddedir.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-circle text-success mt-1 me-3" style="font-size: 8px;"></i>
+                            <span class="text-muted">Lazer filtrasyon teknolojisi sayesinde kaliteyi etkileyebilecek yabancı maddelerden arındırılmıştır.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-circle text-success mt-1 me-3" style="font-size: 8px;"></i>
+                            <span class="text-muted">Üretim süreçlerinizde maksimum verimlilik ve istikrarlı bir kalite sürekliliği sağlar.</span>
+                        </li>
+                    </ul>
+
+                    <!-- Kullanım Alanları Bölümü -->
+                    <h4 class="fw-bold text-dark mb-4 border-start border-4 border-primary ps-3">Kullanım Alanları</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check text-primary me-3"></i>
+                            <span class="fw-medium text-dark">Kangal Boru Üretimi</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check text-primary me-3"></i>
+                            <span class="fw-medium text-dark">Plastik Saksı İmalatı</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check text-primary me-3"></i>
+                            <span class="fw-medium text-dark">Plastik Levha Uygulamaları</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check text-primary me-3"></i>
+                            <span class="fw-medium text-dark">Poşet & Film Üretimi</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-check text-primary me-3"></i>
+                            <span class="fw-medium text-dark">Çeşitli Enjeksiyon Ürünleri</span>
+                        </li>
+                    </ul>
+
+                    <!-- Harekete Geçirici Buton -->
+                    <div class="mt-5 pt-4 border-top">
+                        <a href="iletisim.html" class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-sm rounded-pill">
+                            <i class="fab fa-whatsapp me-2"></i> Bu Ürün İçin Teklif Al
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER BAŞLANGICI ================= -->
+    <footer class="footer-section text-white py-5">
+        <div class="container pt-4">
+            <div class="row">
+                <!-- Sol Kolon: Kurumsal -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold tracking-wide mb-3">DORMEN <span class="text-primary">PLASTİK</span></h4>
+                    <p class="text-primary fw-bold mb-3">Kalite • Güven • Süreklilik</p>
+                    <p class="small text-white-50 pe-md-4">
+                        Plastik atıkları yeniden ekonomiye kazandırıyor, sanayinin ihtiyaç duyduğu geri dönüştürülmüş
+                        LDPE hammaddesini üretiyoruz.
+                    </p>
+                </div>
+
+                <!-- Orta Kolon: Hızlı Menü -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4 text-white">Hızlı Menü</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none footer-link">Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="hakkimizda.html" class="text-white-50 text-decoration-none footer-link">Hakkımızda</a></li>
+                        <li class="mb-2"><a href="uretim.html" class="text-white-50 text-decoration-none footer-link">Üretim</a></li>
+                        <li class="mb-2"><a href="iletisim.html" class="text-white-50 text-decoration-none footer-link">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sağ Kolon: Ürünler -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4">
+                        <a href="urunler.html" class="text-white text-decoration-none footer-link">Ürünler</a>
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="siyah-granul.html" class="text-white-50 text-decoration-none footer-link">Siyah Granül</a></li>
+                        <li class="mb-2"><a href="mavi-granul.html" class="text-white-50 text-decoration-none footer-link">Mavi Granül</a></li>
+                        <li class="mb-2"><a href="kirmizi-granul.html" class="text-white-50 text-decoration-none footer-link">Kırmızı Granül</a></li>
+                        <li class="mb-2"><a href="balkopugu-granul.html" class="text-white-50 text-decoration-none footer-link">Balköpüğü Granül</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="small text-white-50 mb-0">&copy; 2026 Dormen Plastik Tüm hakları saklıdır. Designed by <a href="https://www.dormenplastik.com" target="_blank" class="text-white-50 text-decoration-none">Dormen Plastik</a></p>
+                <div class="mt-3 mt-md-0">
+                    <a href="https://instagram.com/dormenplast" target="_blank" class="text-white-50 fs-4 hover-primary transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= FOOTER BİTİŞİ ================= -->
+
+    <!-- ================= SAĞ ALT WHATSAPP BUTONU ================= -->
+    <a href="https://wa.me/905348197565" class="whatsapp-btn" target="_blank" title="WhatsApp'tan Teklif Alın">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SOL ALT EN BAŞA DÖN BUTONU -->
+    <button id="scrollToTopBtn" class="scroll-top-btn" title="En Başa Dön">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Kendi JS Dosyamız -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

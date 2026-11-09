@@ -1,0 +1,560 @@
+/* ================= DEĞİŞKENLER & RENK PALETİ ================= */
+:root {
+    --primary-color: #2e7d32;      /* Kurumsal yeşil */
+    --primary-hover: #1b5e20;      /* Koyu yeşil hover rengi */
+    --dark-forest: #44474497;        /* Navbar ve Footer koyu yeşil arka planı */
+    --text-dark: #222222;          /* Okunaklı koyu metin */
+    --bg-light: #f4f8f4;           /* Hafif yeşil-gri zemin */
+    --dark-footer: #333333;
+}
+
+/* ================= GENEL STİLLER ================= */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.tracking-wide {
+    letter-spacing: 1.5px;
+}
+
+/* ================= NAVBAR & ANİMASYON ================= */
+.custom-navbar {
+    background-color: var(--dark-forest) !important;
+    padding: 5px 0;
+    transition: transform 0.4s ease-in-out, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1030;
+}
+
+/* JS ile sayfa aşağı kaydırıldığında eklenecek gizlenme sınıfı */
+.nav-up {
+    transform: translateY(-100%);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand span {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    padding: 8px 12px !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* ================= AÇILIR MENÜ (DROPDOWN - HOVER DESTEKLİ) ================= */
+@media (min-width: 992px) {
+    /* Masaüstünde fare üzerine gelince açılır menü görünsün */
+    .custom-dropdown-container:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+.custom-dropdown {
+    background-color: var(--dark-forest);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 8px 0;
+}
+
+.custom-dropdown .dropdown-item {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding-left: 24px; /* Hafif sağa kayma efekti */
+}
+
+/* ================= HERO ALANI (VİTRİN) ================= */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    /* DİKKAT: Arka plan fotoğrafı klasöründeki 'hero-bg.jpg' dosyasından çekilecek */
+    background: linear-gradient(135deg, rgba(20, 51, 23, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%), 
+                url('../img/hero-bg.jpg') center/cover no-repeat;
+    color: #ffffff;
+}
+
+.hero-content {
+    margin-top: 40px;
+}
+
+.text-shadow-sm {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= BUTONLAR ================= */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.4);
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+    background-color: var(--dark-footer);
+}
+
+.footer-link {
+    transition: color 0.3s ease, padding-left 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color) !important;
+    padding-left: 5px;
+}
+
+.hover-primary:hover {
+    color: var(--primary-color) !important;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* ================= SABİT WHATSAPP BUTONU ================= */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* ================= YENİ VURUCU MESAJ & SEKTÖR ETİKETLERİ ================= */
+.sector-badge {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    border: 1px solid rgba(46, 125, 50, 0.2);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.sector-badge:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.25);
+}
+
+.sector-badge i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.sector-badge:hover i {
+    color: #ffffff;
+}
+
+.globe-icon-wrapper {
+    width: 190%;
+    max-width: 430px; /* İstediğin boyuta göre artırıp azaltabilirsin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe-map-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.08)); /* Hafif modern bir derinlik gölgesi */
+}
+
+/* ================= ÜRÜN DETAY SAYFASI STİLLERİ ================= */
+.product-main-wrapper {
+    background-color: transparent; /* Arka planı tamamen şeffaf yapar */
+}
+
+.product-main-img {
+    height: 450px;
+    object-fit: contain; 
+    background-color: transparent; /* Bizim eklediğimiz beyaz arka planı şeffaf yapar */
+    padding: 20px;
+    transition: transform 0.3s ease;
+    mix-blend-mode: multiply; /* DİKKAT: Fotoğrafın (JPG) kendi içindeki beyazlıkları silip sayfaya yedirir */
+}
+
+.product-thumbnail {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0.7; /* Seçili olmayan renkler hafif soluk durur */
+}
+
+.thumbnail-link:hover .product-thumbnail {
+    transform: translateY(-5px); /* Üzerine gelince hafifçe yukarı kalkar */
+    opacity: 1; /* Üzerine gelince rengi canlanır */
+    border-color: var(--primary-color) !important; /* Çerçevesi yeşil olur */
+}
+
+/* ================= ÜRÜNLER SAYFASI ÖZEL TASARIMI ================= */
+.sidebar-link {
+    transition: color 0.2s ease, padding-left 0.3s ease;
+}
+
+.sidebar-link:hover {
+    color: var(--primary-color) !important;
+    padding-left: 5px;
+}
+
+.sidebar-link:hover i {
+    color: var(--primary-color) !important;
+    transform: translateX(3px);
+    transition: transform 0.2s ease;
+}
+
+.product-showcase-card {
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-showcase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+}
+
+/* Görseldeki gibi yuvarlak ve gölgeli ürün resimleri için */
+.product-circle-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* ================= ÜRETİM SAYFASI ÖZEL STİLLERİ ================= */
+.uretim-hero {
+    min-height: 90vh; /* Tam ekran veya ekrana yakın bir yükseklik */
+    /*margin-top: 70px; /* Navbar'ın altında kalması için */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* DİKKAT: Üretim görselinizi 'uretim-bg.jpg' adıyla assets/img/ klasörüne ekleyin. Eğer ana sayfadaki görseli kullanacaksanız burayı 'hero-bg.jpg' yapın. */
+    background: linear-gradient(135deg, rgba(20, 51, 23, 0.95) 0%, rgba(0, 0, 0, 0.85) 100%), 
+                url('../img/uretim-bg.jpeg') center/cover no-repeat;
+}
+
+.production-step-card {
+    background-color: #ffffff;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.production-step-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color) !important;
+}
+
+.step-number {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(46, 125, 50, 0.1);
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= İLETİŞİM SAYFASI ÖZEL STİLLERİ ================= */
+.contact-card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* PLACEHOLDER KURALI */
+.form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1 !important;
+}
+
+/* Form Genel Düzeni */
+.kurumsal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.form-grup {
+    display: flex;
+    flex-direction: column;
+}
+
+.kurumsal-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.kurumsal-form input,
+.kurumsal-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.kurumsal-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Gönder Butonu Tasarımı */
+.gonder-buton {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.gonder-buton:hover {
+    background-color: var(--primary-hover);
+}
+
+.gonder-buton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Başarı ve Hata Mesajları Tasarımı */
+.form-mesaj {
+    display: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.basari-mesaj {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.hata-mesaj {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alan-hata {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ================= HAKKIMIZDA SAYFASI ÖZEL STİLLERİ ================= */
+.hakkimizda-hero {
+    min-height: 70vh;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    /* DİKKAT: Kurumsal bir fabrika veya dış cephe fotoğrafını 'hakkimizda-bg.jpg' adıyla assets/img/ içine atın */
+    background: linear-gradient(135deg, rgba(20, 51, 23, 0.95) 0%, rgba(0, 0, 0, 0.85) 100%), 
+                url('../img/hakkimizda-bg.jpg') center/cover no-repeat;
+}
+
+.kurumsal-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stats-card {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+}
+
+.hakkimizda-hero {
+    min-height: 90vh; /* Tam ekran veya ekrana yakın bir yükseklik */
+    /*margin-top: 70px; /* Navbar'ın altında kalması için */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* DİKKAT: Üretim görselinizi 'uretim-bg.jpg' adıyla assets/img/ klasörüne ekleyin. Eğer ana sayfadaki görseli kullanacaksanız burayı 'hero-bg.jpg' yapın. */
+    background: linear-gradient(135deg, rgba(20, 51, 23, 0.95) 0%, rgba(0, 0, 0, 0.85) 100%), 
+                url('../img/hakkimizda-bg.jpeg') center/cover no-repeat;
+}  
+
+
+
+/* NAVBAR LOGO AYARI */
+.navbar-logo {
+    height: 100px; /* Logonun yüksekliği. Eğer gözüne küçük gelirse 50px yapabilirsin */
+    width: auto;  /* Genişliği orantılı olarak kendi ayarlar */
+    object-fit: contain;
+}
+
+/* ================= MOBİL UYARLAMA ================= */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* ================= KULLANIM ALANLARI KARTLARI ================= */
+.usage-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.usage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fotoğrafların taşıp bozulmasını engeller ve zoom animasyonu ekler */
+.usage-img {
+    height: 240px;
+    object-fit: contain; /* Fotoğrafı kırpmaz, kutunun içine sığacak kadar küçültür */
+    background-color: #ffffff; /* Kenarlarda kalan boşlukları beyaz yapar */
+    padding: 10px; /* Fotoğrafların kartın kenarlarına çok yapışmaması için hafif iç boşluk */
+    transition: transform 0.5s ease;
+}
+
+.usage-card:hover .usage-img {
+    transform: scale(1.05);
+}
+
+/* Sayfa içi linklere tıklandığında yumuşak kaydırma sağlar */
+html {
+    scroll-behavior: smooth;
+    /* Üstteki sabit menü başlığı kapatmasın diye 120px yukarıdan boşluk bırakarak durur */
+    scroll-padding-top: 120px; 
+}
+
+/* ================= SOL ALT EN BAŞA DÖN BUTONU ================= */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--dark-forest, #143317);
+    color: #ffffff;
+    border: 2px solid var(--primary-color, #2e7d32);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--primary-color, #2e7d32);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
